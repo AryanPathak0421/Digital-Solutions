@@ -1,32 +1,95 @@
-# React + TypeScript + Vite
+# Rozsewa Digital — Web & Digital Solutions Agency Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, production-level, premium React frontend website designed for an India-focused web development and digital solutions agency that delivers affordable websites, dynamic web applications, role-based admin panels, and mobile apps to local Indian businesses.
 
-Currently, two official plugins are available:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAryanPathak0421%2FDigital-Solutions)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 How to Deploy on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Option 1: Automatic 1-Click Import (Recommended)
 
-## Expanding the Oxlint configuration
+1. Go to [https://vercel.com/new](https://vercel.com/new).
+2. Connect your GitHub account and select the **`Digital-Solutions`** repository.
+3. Vercel will automatically detect the settings:
+   - **Framework Preset:** `Vite`
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+   - **Install Command:** `npm install`
+4. Click **Deploy**.
+5. Your website will be live with full SSL, global CDN, and automatic continuous deployment on every Git push!
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+> **Note on SPA Routing:** The repository includes [`vercel.json`](./vercel.json) configured with rewrites so all routes (`/pricing`, `/services`, `/portfolio`, `/industries/:slug`, etc.) reload cleanly without 404 errors.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [React 19](https://react.dev/) + [Vite 8](https://vite.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Routing:** [React Router v7](https://reactrouter.com/) (Lazy-loaded routes with scroll restoration)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Forms & Validation:** [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
+- **Linting:** [Oxlint](https://oxc.rs/)
+
+---
+
+## 💡 Core Features & Business Highlights
+
+1. **Transparent Pricing Models:**
+   - **Static Website:** Starts at ₹7,000 (8 pages included, additional pages ₹600/page).
+   - **Dynamic Web Application:** Starts at ₹30,000 (includes 1-year maintenance, admin panel, backend support).
+   - **Operational Panels:** Starts at ₹10,000/panel (Staff, Manager, Vendor, Delivery).
+   - **Companion Mobile Apps:** Starts at ₹15,000+.
+   - **Custom Modules:** Quoted per scope & complexity.
+
+2. **Interactive Cost Estimator (`PricingCalculator`):**
+   - Live interactive price computation with page counters, dynamic module selectors, and mobile toggles.
+   - 1-click WhatsApp quote generator prefilling calculated requirements.
+
+3. **8-Step Interactive Quote Builder (`QuoteBuilder`):**
+   - Multi-step wizard allowing local business owners to customize their specifications and receive an itemized quote.
+
+4. **Lead Generation Consultation Form:**
+   - Indian mobile number validation, business categorization, budget brackets, and contact preference.
+
+5. **Case Studies & Portfolio:**
+   - Filterable projects across Retail, Restaurants, Healthcare, Education, and Services.
+   - Interactive case study modal (Problem $\to$ Strategy $\to$ Design $\to$ Development $\to$ Qualitative Outcomes).
+
+6. **Industry Blueprints (`/industries/:industry`):**
+   - Tailored problem/solution models for Jewellery, Beauty, Dining, Clinics, Real Estate, and Academies.
+
+---
+
+## 💻 Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/AryanPathak0421/Digital-Solutions.git
+
+# Enter project directory
+cd Digital-Solutions
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Run production build
+npm run build
+
+# Preview production build locally
+npm run preview
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📄 License & Ownership
+
+© 2026 Rozsewa Digital. All rights reserved.
+Made for businesses that want to grow digitally.
