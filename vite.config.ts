@@ -27,4 +27,4 @@ export default defineConfig({
     } catch (err) {
       console.error('Auth Error!', err);
     }
-})();
+});
